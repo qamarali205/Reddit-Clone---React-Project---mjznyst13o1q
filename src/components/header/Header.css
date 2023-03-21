@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header{
+    height: 5rem;
+    background-color: rgb(197, 184, 184);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+button{
+    margin: 1rem;
+}
+/* .modal{
+    height: 40vh;
+    width: 20vw;
+    background-color: red;
+}
+.postmain{
+    height: 40vh;
+    width: 30vh;
+    display: flex;
+    justify-content: center;
+    margin: 1rem;
+    flex-direction: column;
+    border: 3px solid red;
+
+}
+.modal-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+} */

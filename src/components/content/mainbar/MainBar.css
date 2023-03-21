@@ -1,0 +1,126 @@
+.mainbar{
+    flex: 0.65;
+}
+
+.mainbar .update-card{
+    background-color: white;
+    padding: 15px;
+    border-radius: var(--border-radius);
+    border: 1px solid rgb(200, 200, 200);
+    margin-top: 15px;
+
+
+}
+.mainbar .update-card .top-section{
+    display: flex;
+    justify-content: space-between;
+
+}
+.mainbar .update-card .top-section span{
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+}
+.mainbar .update-card .top-section svg{
+    font-size: 18px;
+    color: rgb(150, 150, 150);
+}
+.mainbar .update-card .top-section svg:hover{
+    background-color: rgb(230, 230, 230);
+    color: black;
+    border-radius: var(--border-radius);
+}
+.mainbar .update-card .body{
+    margin: 15px 25px;
+    padding: 15px;
+    margin-bottom: 0px;
+    border-radius: var(--border-radius);
+    border: 1px solid rgb(200, 200, 200);
+    display: flex;
+    justify-content: space-between;
+
+}
+.mainbar .update-card .body:hover{
+    border: 2px solid rgb(150, 150, 150);
+}
+.mainbar .update-card .body .context .title{
+    font-weight: 600;
+    font-size: 24px;
+}
+.mainbar .update-card .body .context .description{
+    font-size: 14px;
+    color: rgb(150, 150, 150);
+    padding-right: 25px;
+}
+.mainbar .update-card .body img{
+    min-width: 64px;
+    min-height: 64px;
+    max-width: 64px;
+    max-height: 64px;
+    margin-right: 50px;
+}
+
+.mainbar .filter-container{
+    display: flex;
+    background-color: white;
+    border-radius: var(--border-radius);
+    border: 1px solid rgb(200, 200, 200);
+    margin: 20px 0;
+    padding: 10px;
+}
+.mainbar .filter-container .filter-item{
+    display: flex;
+    color: var(--primary-color);
+    background-color: var(--light-gray);
+    border-radius: 20px;
+    padding: 5px 0px;
+    margin: 0px 5px;
+    font-size: 15px;
+    align-items: center;
+    font-weight: 600;
+}
+.mainbar .filter-container .filter-item:first-child{
+    margin-left: 0px;
+}
+.mainbar .filter-container .filter-item:last-child{
+     margin-right: 0px;
+}
+.mainbar .filter-container .filter-item-secondary{
+    display: flex;
+    align-items: center;
+    color: rgb(150, 150, 150);
+    padding: 5px 0px;
+    margin: 0px 5px;
+}
+.mainbar .filter-container .filter-item-secondary svg{
+    margin-right: 5px;
+}
+.mainbar .filter-container .filter-item-secondary:hover{
+    color: black;
+    background-color: var(--light-gray);
+    border-radius: 20px;
+    
+}
+.mainbar .filter-container .filter-item-tertiary{
+    color: rgb(150, 150, 150);
+    padding: 5px 0px;
+    margin: 0px 5px;
+    align-items: center;
+}
+.mainbar .filter-container .filter-item-tertiary:hover{
+    background-color: var(--light-gray);
+    border-radius: 50%;
+
+}
+.mainbar .filter-container .filter-item-menu{
+    display: flex;
+    align-items: center;
+    color: var(--primary-color);
+    padding: 5px 0px;
+    margin: 0px 5px;
+}
+.mainbar .filter-container .filter-item-menu:hover{
+    background-color: var(--light-gray);
+    border-radius: 20px;
+
+}

@@ -1,0 +1,19 @@
+.comunity-session{
+    background-color: white;
+    border-radius: var(--border-radius);
+    border: 1px solid rgb(200, 200, 200);
+}
+.comunity-session .title{
+    height: 80px;
+    position: relative;
+    border-top-left-radius: var(--border-radius);
+    border-top-right-radius: var(--border-radius);
+    background-color: black;
+}
+.comunity-session .title>span{
+    color: white;
+    position: absolute;
+    bottom: 10px;
+    left: 15px;
+    font-weight: 600;
+}

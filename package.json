@@ -12,8 +12,13 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@material-ui/core": "^4.12.4",
+    "@material-ui/icons": "^4.11.3",
+    "bootstrap": "^5.2.3",
     "react": "^16.13.1",
-    "react-dom": "^16.13.1"
+    "react-bootstrap": "^2.7.2",
+    "react-dom": "^16.13.1",
+    "react-modal": "^3.16.1"
   },
   "jest": {
     "moduleNameMapper": {
