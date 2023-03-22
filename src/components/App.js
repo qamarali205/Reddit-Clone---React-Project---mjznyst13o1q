@@ -5,6 +5,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 import Header from "./header/Header";
 import Post from "./post/Post";
+import { AuthContextProvider } from "./context/AuthContext";
 
 // import { Routes, Route,Link } from "react-router-dom";
 import Login from "./login/Login";
@@ -41,7 +42,9 @@ const App = () => {
   };
   console.log(posts);
   return (
+    
     <div id="main">
+      <AuthContextProvider>
       {/* <Link to="/">Home</Link>
       <Link to="/login">Login</Link>
       <Link to="/signup">Signup</Link> */}
@@ -61,6 +64,7 @@ const App = () => {
       {/* <LoginForm />
       <Footer /> */}
       {/* <Landing /> */}
+      </AuthContextProvider>
     </div>
   );
 };

@@ -1,21 +1,25 @@
-import React, { useState, useContext } from "react";
+import React, { useState, useContext,useEffect } from "react";
 import "./Header.css";
 import logo from "../../Images/logo-removebg-preview.png";
 // import Modal from 'react-modal';
 import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
 import Form from "react-bootstrap/Form";
+import { UserAuth } from "../context/AuthContext";
 
 //  import { posts } from '../post/Post';
 // import { DataPostContext } from '../context/DataContext';
 const Header = (props) => {
+  const {googleSignIn, logOut, user}=UserAuth();
   // const {posts,setNewPosts}=DataPostContext();
 
   const [modalOpen, setModalOpen] = useState(false);
   const [postTitle, setPostTitle] = useState("");
 
   const modalhanelOpen = () => {
+    if(user){
     setModalOpen(true);
+    }
   };
   const modalhanelClose = () => {
     setModalOpen(false);
@@ -34,6 +38,35 @@ const Header = (props) => {
     console.log(props);
   };
   const isSaveButtonDisabled = postTitle.trim().length === 0;
+
+  
+
+
+  const [isSignIn, setSignIn] = useState(true);
+  const [title, setTitle] = useState("Login");
+
+  const handleLogin = async () => {
+    try {
+      let signIn = !isSignIn;
+      setSignIn(signIn);
+      if (isSignIn) {
+        await googleSignIn();
+      } else {
+        await logOut();
+      }
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
+  useEffect(() => {
+    if (user != null) {
+      setTitle("Log Out");
+    } else {
+      setTitle("Log In");
+    }
+  }, [user]);
+
   return (
     <>
       <div className="header">
@@ -41,6 +74,9 @@ const Header = (props) => {
 
         <button className="btn btn-primary" onClick={modalhanelOpen}>
           Add new post
+        </button>
+        <button className="btn btn-primary" onClick={handleLogin}>
+          {title}
         </button>
         {/* <Modal isOpen={modalOpen} onRequestClose={modalhanelClose} className='modal'> */}
         {/* Modal Content Goes Here */}
