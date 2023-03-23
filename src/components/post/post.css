@@ -2,14 +2,13 @@
     display: flex;
     flex-direction: column;
     margin: 0 25%;
-    
-    margin-top: 20px;
-   
+    margin-top: 20px;  
 } 
 .card1 .post{
     display: flex;
     flex-direction: row;
     gap: 10px;
+    
     
 }
 .card1 .post .upvote,.downvote{

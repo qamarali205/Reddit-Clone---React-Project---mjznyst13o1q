@@ -10,34 +10,54 @@
     flex-direction: row;
     justify-content: space-between;
 }
+
 button{
-    margin: 1rem;
+    margin:1rem  .3rem;
 }
-/* .modal{
-    height: 40vh;
-    width: 20vw;
-    background-color: red;
-}
-.postmain{
-    height: 40vh;
-    width: 30vh;
-    display: flex;
-    justify-content: center;
-    margin: 1rem;
-    flex-direction: column;
-    border: 3px solid red;
+
+
+@media screen and (max-width: 425px){
+    .header{
+        justify-content: flex-start;
+        gap: 5rem;
+    }
+    .header img{
+        height: 64px;
+        width: 64px;
+    }
+    
+    #btnsize{
+        font-size: 12px !important;
+    }
 
 }
-.modal-header{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-} */
+@media screen and (max-width: 350px){
+    .header{
+        justify-content: flex-start;
+        gap: 3rem;
+    }
+    .header img{
+        height: 64px;
+        width: 64px;
+    }
+    
+    #btnsize{
+        font-size: 12px !important;
+    }
 
-@media screen and (max-width: 400px){
-    button{
-        font-size: 0.8rem;
+}
+@media screen and (max-width: 290px){
+    .header{
+        justify-content: flex-start;
+        gap: 1rem;
+    }
+    .header img{
+        height: 64px;
+        width: 64px;
+    }
+    
+    #btnsize{
+        font-size: 12px !important;
     }
 
 }

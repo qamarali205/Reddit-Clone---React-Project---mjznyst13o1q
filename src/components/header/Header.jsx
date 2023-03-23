@@ -73,14 +73,14 @@ const Header = (props) => {
     <>
       <div className="header">
         <img src={logo} alt="logo" />
-        
-
-        <button className="btn btn-primary" onClick={modalhanelOpen}>
+        <div>
+        <button id="btnsize" className="btn btn-primary" onClick={modalhanelOpen}>
           Add new post
         </button>
-        <button className="btn btn-primary" onClick={handleLogin}>
+        <button id="btnsize" className="btn btn-primary" onClick={handleLogin}>
           {title}
         </button>
+        </div>
         {/* <Modal isOpen={modalOpen} onRequestClose={modalhanelClose} className='modal'> */}
         {/* Modal Content Goes Here */}
         {/* <div className='postmain'>
