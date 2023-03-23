@@ -6,7 +6,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Header from "./header/Header";
 import Post from "./post/Post";
 import { AuthContextProvider } from "./context/AuthContext";
-// import Welcome from "./welcome/Welcome";
+import Welcome from "./welcome/Welcome";
 
 // import { Routes, Route,Link } from "react-router-dom";
 import Login from "./login/Login";
@@ -58,7 +58,7 @@ const App = () => {
         
       
        <Header setPosts={setPostsHandler} />
-      {/* <Welcome /> */}
+      <Welcome />
       {posts.map((post, index) => (
         <Post key={Math.random()} post={post} index={index} />
        ))}
