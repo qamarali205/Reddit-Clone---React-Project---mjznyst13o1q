@@ -5,6 +5,7 @@ import ArrowDown from "@material-ui/icons/ArrowDownward";
 import { UserAuth } from "../context/AuthContext";
 
 const Post = (props) => {
+  
   // const addNewPost = (newPost) => {
   //     setPosts([...posts, newPost]);
   const [upFlag, setUpFlag]=useState(true)
@@ -25,6 +26,8 @@ const Post = (props) => {
       setUpVote(upVote + 1);
       // upFlag=false;
       setUpFlag(false);
+    }else{
+      alert('you are not logged in');
     }
     
   }
@@ -33,28 +36,34 @@ const Post = (props) => {
       setDownVote(downVote + 1);
       // downFlag=false;
       setDownFlag(false);
+    }else{
+      alert('you are not logged in');
     }
   }
   //   }
   console.log(props);
 
   return (
-    <>
+    <> 
       <div className="card1" key={index}>
         <div className="post">
           <div className="arrow">
+            <div>
             <span
               className="arrowup hoverable"
               onClick={upvoteCounter}
             >
               <ArrowUp />
             </span>
+            </div>
+            <div>
             <span
               className="arrowdown hoverable"
               onClick={downvoteCounter}
             >
               <ArrowDown />
             </span>
+            </div>
           </div>
           <div className="post-text">{post.postText}</div>
         </div>

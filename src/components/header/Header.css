@@ -34,3 +34,10 @@ button{
     justify-content: space-between;
     align-items: center;
 } */
+
+@media screen and (max-width: 400px){
+    button{
+        font-size: 0.8rem;
+    }
+
+}

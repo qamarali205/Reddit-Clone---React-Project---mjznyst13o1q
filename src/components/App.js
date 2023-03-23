@@ -6,6 +6,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Header from "./header/Header";
 import Post from "./post/Post";
 import { AuthContextProvider } from "./context/AuthContext";
+import Welcome from "./welcome/Welcome";
 
 // import { Routes, Route,Link } from "react-router-dom";
 import Login from "./login/Login";
@@ -15,20 +16,20 @@ const postData = [
   {
     postedBy: "Kunal",
     postText:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+      "First Post.",
     upVotes: 3,
     downVotes: 1,
   },
   {
     postedBy: "XYZ",
-    postText: "The quick brown fox jumps right over the lazy dog",
+    postText: "Second Post",
     upVotes: 0,
     downVotes: 1,
   },
   {
     postedBy: "QAMAR Ali",
     postText:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+      "Third Post.",
     upVotes: 3,
     downVotes: 0,
   },
@@ -57,6 +58,7 @@ const App = () => {
         
       
        <Header setPosts={setPostsHandler} />
+      <Welcome />
       {posts.map((post, index) => (
         <Post key={Math.random()} post={post} index={index} />
        ))}

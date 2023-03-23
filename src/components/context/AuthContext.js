@@ -19,8 +19,8 @@ export const AuthContextProvider = ({ children }) => {
 
   const googleSignIn = () => {
     const provider = new GoogleAuthProvider();
-    signInWithPopup(auth, provider)
-      
+    signInWithPopup(auth, provider).then((result) => {
+      console.log(result.user)}).catch((error)=>{console.log(error)})
   
   };
 

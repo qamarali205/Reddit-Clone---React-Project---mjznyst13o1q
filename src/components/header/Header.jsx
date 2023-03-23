@@ -19,6 +19,8 @@ const Header = (props) => {
   const modalhanelOpen = () => {
     if(user){
     setModalOpen(true);
+    }else{
+      alert('you are not logged in');
     }
   };
   const modalhanelClose = () => {
@@ -71,6 +73,7 @@ const Header = (props) => {
     <>
       <div className="header">
         <img src={logo} alt="logo" />
+        
 
         <button className="btn btn-primary" onClick={modalhanelOpen}>
           Add new post
