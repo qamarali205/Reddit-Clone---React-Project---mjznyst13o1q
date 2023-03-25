@@ -27,7 +27,7 @@ const Post = (props) => {
       // upFlag=false;
       setUpFlag(false);
     }else{
-      alert('you are not logged in');
+      alert('After Login you Vote only One time');
     }
     
   }
@@ -37,7 +37,7 @@ const Post = (props) => {
       // downFlag=false;
       setDownFlag(false);
     }else{
-      alert('you are not logged in');
+      alert('After Login you Vote only One time');
     }
   }
   //   }

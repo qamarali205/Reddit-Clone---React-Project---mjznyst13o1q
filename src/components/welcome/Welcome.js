@@ -6,7 +6,7 @@ const Welcome = () => {
      const {user}=UserAuth();
   return (
     <div className='welcome'>
-      {user &&  <p>Hi <span>{user.displayName}</span> Welcome to Reddit Clone Site.</p>}
+      {user &&  <p>Hi <span>{user.displayName}</span> Welcome to Reddit Clone App</p>}
 
      
     </div>
