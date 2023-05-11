@@ -121,7 +121,7 @@ export default function SignUpModal() {
             onChange={(e) => setPassword(e.target.value)}
           />
           <Button variant="contained" id="btnSignIn" onClick={handleSubmit}>
-            SignIn
+            Sign UP
           </Button>
         </Box>
       </Modal>
