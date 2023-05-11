@@ -1,9 +1,0 @@
-.welcome{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.welcome span{
-    font-size: 20px;
-    color: red;
-}
